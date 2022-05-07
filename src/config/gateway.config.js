@@ -1,0 +1,68 @@
+const fieldData = {
+  mollie: {
+    apiKey: true,
+    secretKey: false,
+    email: false,
+    ex1: { status: false, label: 'N/A' },
+    ex2: { status: false, label: 'N/A' },
+    supportedCurrencies: ['USD', 'EUR', 'GBP', 'AUD', 'CAD', 'SGD'],
+  },
+  coinbase: {
+    apiKey: true,
+    secretKey: false,
+    email: false,
+    ex1: { status: false, label: 'N/A' },
+    ex2: { status: false, label: 'N/A' },
+    supportedCurrencies: ['USD'],
+  },
+  coinpayments: {
+    apiKey: true,
+    secretKey: true,
+    email: false,
+    ex1: { status: false, label: 'N/A' },
+    ex2: { status: false, label: 'N/A' },
+    supportedCurrencies: ['BTC', 'ETH', 'USDC', 'XRP', 'USDT', 'SOL', 'BNB'],
+  },
+  coingate: {
+    apiKey: true,
+    secretKey: false,
+    email: false,
+    ex1: { status: true, label: 'Mode' },
+    ex2: { status: false, label: 'N/A' },
+    supportedCurrencies: ['BTC', 'ETH', 'XRP', 'BNB', 'USDT', 'USDC', 'SOL', 'ADA'],
+  },
+  paypal: {
+    apiKey: true,
+    secretKey: true,
+    email: false,
+    ex1: { status: true, label: 'Environment' },
+    ex2: { status: false, label: 'N/A' },
+    supportedCurrencies: ['USD', 'EUR', 'GBP', 'AUD', 'CAD', 'SGD', 'JPY', 'INR'],
+  },
+  stripe: {
+    apiKey: true,
+    secretKey: true,
+    email: false,
+    ex1: { status: true, label: 'Signing Secret' },
+    ex2: { status: false, label: 'N/A' },
+    supportedCurrencies: ['USD', 'EUR', 'GBP', 'AUD', 'CAD', 'SGD', 'JPY', 'NGN', 'INR'],
+  },
+  paystack: {
+    apiKey: true,
+    secretKey: false,
+    email: false,
+    ex1: { status: false, label: 'N/A' },
+    ex2: { status: false, label: 'N/A' },
+    supportedCurrencies: ['USD', 'NGN'],
+  },
+  voguepay: {
+    apiKey: false,
+    secretKey: false,
+    email: false,
+    ex1: { status: true, label: 'Merchant ID' },
+    ex2: { status: false, label: 'N/A' },
+    supportedCurrencies: ['USD', 'NGN', 'EUR', 'GBP', 'ZAR', 'JPY', 'INR', 'AUD'],
+  },
+};
+
+module.exports = fieldData;
